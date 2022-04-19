@@ -12,7 +12,8 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your Bot Token from @BotFather",
-            "value": ""
+            "value": "",
+            "required": false
         }
     },
     "addons": [],
