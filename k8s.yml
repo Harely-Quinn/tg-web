@@ -1,33 +1,32 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world
+  name: tg-web
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-world
+      app: tg-web
   template:
     metadata:
       labels:
-        app: hello-world
+        app: tg-web
     spec:
       containers:
       - image: okteto/hello-world:node
-        name: hello-world
-
+        name: tg-web
 ---
 
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-world
+  name: tg-web
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "hello-world"
+  - name: "tg-web"
     port: 3000
   selector:
-    app: hello-world
+    app: tg-web
