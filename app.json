@@ -1,32 +1,7 @@
 {
-    "name": "Example Bot",
-    "description": "Written In Python Using python",
-    "logo": "https://telegra.ph/file/d8ff390e2a0ddfb5e4370.jpg",
-    "keywords": [
-        "nodejs",
-        "Telegram"
-    ],
-    "website": "https://t.me/",
-    "repository": "",
-    "success_url": "https://t.me/",
-    "env": {
-        "BOT_TOKEN": {
-            "description": "Your Bot Token from @BotFather",
-            "value": "",
-            "required": false
-        }
-    },
-    "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/nodejs"
-        }
-    ],
-    "formation": {
-        "web": {
-            "quantity": 1,
-            "size": "free"
-        }
-    },
-    "stack": "heroku-20"
+  "name": "Node.js Getting Started",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/heroku/node-js-getting-started",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
 }
