@@ -1,0 +1,31 @@
+{
+    "name": "Example Bot",
+    "description": "Written In Python Using python",
+    "logo": "https://telegra.ph/file/d8ff390e2a0ddfb5e4370.jpg",
+    "keywords": [
+        "python",
+        "Telegram"
+    ],
+    "website": "https://t.me/",
+    "repository": "",
+    "success_url": "https://t.me/",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Bot Token from @BotFather",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "heroku-20"
+}
